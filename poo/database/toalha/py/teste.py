@@ -4,11 +4,11 @@ class Towel:
         self.size: str = size
         self.wetness: int = 0
 
-    def dry(self, amount: int) -> None:
+    def dry(self, amount: int) -> None
         self.wetness += amount 
-        self.wetness >= getMaxwetness()
-        print("toalha encharcada")
-        self.wetness = self.getMaxwetness
+        self.wetness >= getMaxwetness():
+        print("toalha emxarcada")
+        self.wetness = getMaxwetness
 
     def getMaxwetness(self) -> int: 
         if self.size == "P":
@@ -17,16 +17,16 @@ class Towel:
             return 20
         if self.size == "G":
             return 30
-        return 0
+            return 0
 
-    def wringOut(self) -> None: 
+    def wringOut(self) -> None 
         self.wetness = 0
 
     def isDry(self) -> bool: 
-            return self.wetness == 0
+            return self.wetness = 0
     
     def __str__(self) -> str: 
         return f"Cor: {self.color}, Tam: {self.size}, Umidade: {self.wetness}"
 
-MinhaToalha = Towel ("suja", "M")
-print(MinhaToalha)
+Minhatoalha: str = Towel (red, G)
+print(Minhatoalha)
