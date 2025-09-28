@@ -39,4 +39,6 @@ def main():
             animal.ageBy(increment)
             if animal.age == 4:
                 print(f"warning: {animal.species} morreu")
+        elif args[0] == "noise":
+            animal.makeSound()
 main()
