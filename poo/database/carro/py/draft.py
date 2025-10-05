@@ -1,11 +1,11 @@
-class Carro:
+class Carro: 
     def __init__(self, passageiros: int, km: int, gas: int):
-        self.passageiros: int = 0 
+        self.passageiros: int = 0
         self.km: int = 0
         self.gas: int = 0
-        self.passMax = 2
-        self.gasMax: int = 100
-        
+        self.gasMax = 100
+        self.passMax = 2 
+
     def enter(self) -> None:
         if self.passageiros < self.passMax:
             self.passageiros += 1
@@ -15,14 +15,18 @@ class Carro:
     def leave(self) -> None:
         if self.passageiros > 0:
             self.passageiros -= 1
-        else:
+        else: 
             print("fail: nao ha ninguem no carro")
-        
-    def fuel(self, increment: int):
+            
+    def __str__(self) -> str:
+            return f"pass: {self.passageiros}, gas: {self.gas}, km: {self.km}"
+
+
+    def fuel(self, increment: int) -> None:
         if self.gas < 100:
             self.gas += increment
-            if self.gas > 100:
-                self.gas = 100
+        if self.gas > 100:
+            self.gas = 100
 
     def drive(self, distance: int) -> None:
         if self.passageiros == 0:
@@ -39,12 +43,9 @@ class Carro:
             self.km += kmpercorrido
             self.gas = 0
             print(f"fail: tanque vazio apos andar {kmpercorrido} km")
-            
-    def __str__(self) -> str:
-        return f"pass: {self.passageiros}, gas: {self.gas}, km: {self.km}"
 
 def main():
-    carro = Carro (" ", " ", " ")
+    carro = Carro(" ", " ", " ")
     while True:
         line: str = input()
         print("$" + line)
@@ -56,12 +57,11 @@ def main():
         if args[0] == "enter":
             carro.enter()
         if args[0] == "leave":
-            carro.leave() 
+            carro.leave()
         if args[0] == "fuel":
             increment: int = int(args[1])
             carro.fuel(increment)
         if args[0] == "drive":
             distance: int = int(args[1])
             carro.drive(distance)
-
 main()
