@@ -1,0 +1,4 @@
+2025-10-07 16:47:55, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-07 16:47:57, EXEC, v:1, k:poo@chinela, mode:FREE, size:31
+2025-10-07 16:50:10, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-07 16:50:11, EXEC, v:1, k:poo@chinela, mode:FREE, size:31

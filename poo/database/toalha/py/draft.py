@@ -26,25 +26,20 @@ class Towel:
             return self.wetness == 0
     
     def __str__(self) -> str: 
-        return f"Cor: {self.color}, Tam: {self.size}, Umidade: {self.wetness}"
+        return f"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}"
 
 def main():
-    minhaToalha = Towel(" ", " ")
+    toalha = Towel(" ", " ")
     while True: 
         line: str = input()
+        print("$" + line)
         args: list[str] = line.split(" ")
         if args[0] == "end":
             break
-        elif args[0] == "new":
+        elif args[0] == "criar":
             color = args[1]
             size = args[2]
-            minhaToalha = Towel(color, size)
-        elif args[0] == "show":
-            print("minhaToalha")
-        elif args[0] == "dry"
-        amount: int = int(args[])
-        minhaToalha.dry(amount)
-        else: 
-            print("fail: codigo invalido")
-
+            toalha = Towel(color, size)
+        elif args[0] == "mostrar":
+             print(toalha)
 main()

@@ -60,7 +60,6 @@ class Towel:
     def isDry(self) -> bool:
         return self.wetness == 0
 
-
     def show(self) -> None:
         print(self)
 

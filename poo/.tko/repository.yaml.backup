@@ -11,11 +11,19 @@ expanded:
 - bloco_a-práticas-com-o-git
 - campanha-principal
 - bloco_b-primeiras-classes
-tasks: {}
+- bloco_b-agregação-simples
+tasks:
+  git_pratica: '{rate:100, human:monitor_e_amigos, iagen:gpt, guide:video, alone:5,
+    study:150}'
+  toalha: '{rate:100, alone:10, study:360}'
+  animal: '{rate:100, human:monitores, alone:10, study:300}'
+  carro: '{rate:100, alone:10, study:600}'
+  calculadora: '{rate:100, alone:10, study:300}'
+  enxugar: '{rate:100, alone:10, study:240}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
-  graph: 0
+  graph: 1
   xray: 0
-index: animal
+index: github_edu

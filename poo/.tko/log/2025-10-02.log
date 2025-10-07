@@ -1,0 +1,8 @@
+2025-10-02 01:05:32, MOVE, v:1, k:carro, mode:PICK
+2025-10-02 01:05:51, EXEC, v:1, k:carro, mode:FULL, rate:0, size:69
+2025-10-02 01:09:03, EXEC, v:1, k:carro, mode:FULL, rate:0, size:71
+2025-10-02 01:09:58, EXEC, v:1, k:carro, mode:FULL, rate:0, size:70
+2025-10-02 08:35:08, MOVE, v:1, k:carro, mode:PICK
+2025-10-02 08:35:13, EXEC, v:1, k:carro, mode:FULL, rate:100, size:67
+2025-10-02 08:43:01, MOVE, v:1, k:charger, mode:DOWN
+2025-10-02 08:47:29, MOVE, v:1, k:calculadora, mode:DOWN

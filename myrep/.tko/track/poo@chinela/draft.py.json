@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_16-47-57",
+            "content": "@@ -310,17 +310,16 @@\n amanho =\n-=\n  valor:%0A\n@@ -564,16 +564,19 @@\n 0:%0A     \n+   \n valor = \n@@ -680,16 +680,20 @@\n  break%0A%0A\n+    \n print(%22c\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-07_16-50-11",
+            "content": "class Chinela:\n    def __init__(self, tamanho: int = 0):\n        self.__tamanho = tamanho\n\n    def set_tamanho(self, valor: int) -> bool:\n        if valor % 2 != 0:\n            print(f\"valor invalido\")\n            return False \n        if valor < 20 or valor > 50:\n            return False\n        if self.__tamanho == valor:\n            return True\n        \n    def get_tamanho(self) -> int: \n        return self.__tamanho\n\n    def __str__(self) -> str:\n        return f\"{self.__tamanho}\"\n\ndef main(): \n    chinela = Chinela()\n    while chinela.get__tamanho() == 0:\n     valor = int(input(\"digite o tamanho de sua chinela!\"))\n    if chinela.set_tamanho(valor) == True:\n        break\n\nprint(\"compra obtida com sucesso! tamanho da chinela: \", chinela.get_tamanho())\n\nmain()\n\n        \n",
+            "lines": "31"
+        }
+    ]
+}
